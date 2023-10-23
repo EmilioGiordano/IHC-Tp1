@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url(img/github\ robada.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    
+    position: relative;
+    font-size: 18px;
+    color: #eddddd;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+
+
+.navbar a::before{
+    
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: hsl(206, 62%, 47%);
+    transition: .4s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.titulo1 {
+    color: hsl(0, 0%, 99%);
+    font-size: 50px;
+    margin-left: 80px;
+    padding: 20;
+}
+.texto1{
+    color: white;
+    font-size: 25px;
+    margin-left: 80px;
+    padding: 20;
+}
+
+.titulo2 {
+    color:#228fb4 ;
+    font-size: 30px;
+    margin-left: 80px;
+    padding: 20;
+}
+.texto2 {
+    color: white;
+    font-size: 30px;
+    margin-left: 80px;
+    padding: 20;
+}
+.orden {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.titulo_contacto {
+    color:#228fb4 ;
+    font-size: 50px;
+    margin-left: 80px;
+    padding: 20;
+}
